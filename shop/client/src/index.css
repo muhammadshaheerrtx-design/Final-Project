@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");
+
+:root {
+  --paper: #f6f3ec;
+  --paper-raised: #ffffff;
+  --ink: #211e1b;
+  --ink-soft: #4a453d;
+  --muted: #837c6e;
+  --line: #ddd5c4;
+  --forest: #1f3d2b;
+  --forest-deep: #14291c;
+  --clay: #a6572e;
+  --clay-deep: #834323;
+  --danger: #b23a2e;
+  --danger-bg: #f7e6e2;
+
+  --font-display: "Fraunces", serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+[data-theme="dark"] {
+  --paper: #121317;
+  --paper-raised: #1b1d23;
+  --ink: #f2f2f0;
+  --ink-soft: #c7c5bf;
+  --muted: #8b8d94;
+  --line: #2c2e35;
+  --forest: #3b82f6;
+  --forest-deep: #2563eb;
+  --clay: #22c55e;
+  --clay-deep: #16a34a;
+  --danger: #ef4444;
+  --danger-bg: #3a1c1c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--forest);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
