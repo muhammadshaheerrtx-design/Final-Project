@@ -4,9 +4,7 @@ const Product = require("./models/Product"); // Update this path to your Product
 
 // Replace with your MongoDB connection URL
 const MONGO_URI =
-  process.env.MONGO_URI ||
-  "mongodb://muhammadshaheerrtx_db_user:OQqkxh7ZVgOkCdBy@ac-6nfv3li-shard-00-00.e3oej8n.mongodb.net:27017,ac-6nfv3li-shard-00-01.e3oej8n.mongodb.net:27017,ac-6nfv3li-shard-00-02.e3oej8n.mongodb.net:27017/?ssl=true&replicaSet=atlas-a5kgtp-shard-0&authSource=admin&appName=Cluster1";
-
+  process.env.MONGO_URI 
 const CATEGORIES = [
   "electronics",
   "clothing",
